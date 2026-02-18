@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Support Bentley’s ongoing medical journey and help build a future foundation for NICU and PICU families.">
+  <title>Support | Bentley’s Support Reef</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Bentley’s Support Reef</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="https://www.gofundme.com/f/help-bentleys-family-with-medical-expenses" target="_blank" class="donate-btn">Donate Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Support Bentley’s Journey</h1>
+      <p>
+        Every act of support helps sustain Bentley’s care today
+        while building a foundation for families facing tomorrow.
+      </p>
+      <div class="hero-buttons">
+        <a href="https://www.gofundme.com/f/help-bentleys-family-with-medical-expenses" target="_blank" class="primary-btn">Donate Now</a>
+        <a href="#impact" class="secondary-btn">See Impact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- WHY SUPPORT -->
+    <section class="story-section light-section">
+      <div class="container">
+        <h2>Why Support Matters</h2>
+
+        <p>
+          Extended NICU and PICU journeys stretch families emotionally,
+          spiritually, and financially. Bentley’s fight continues at home —
+          supported by medical equipment, therapy, and daily care.
+        </p>
+
+        <p>
+          Your support sustains his progress while helping us build
+          a future foundation designed to ease the burden for
+          families walking similar paths.
+        </p>
+      </div>
+    </section>
+
+    <!-- IMPACT NUMBERS -->
+<section class="story-section impact-metrics">
+  <div class="container">
+    <h2>Community Impact</h2>
+
+    <div class="metrics-grid">
+
+      <div class="metric fade-in">
+        <h3>$<span id="raised" data-total="97718">0</span></h3>
+        <p>Raised to Support Bentley’s Care</p>
+      </div>
+
+      <div class="metric fade-in">
+        <h3><span id="families" data-total="100">0</span>+</h3>
+        <p>Projected Families Supported Per $100,000 Funded</p>
+      </div>
+
+    </div>
+
+    <p class="projection-note">
+        Grant tiers will range from micro relief support to full 
+        stabilization assistance based on family need.
+    </p>
+  </div>
+</section>
+
+    <!-- WHERE SUPPORT GOES -->
+    <section class="story-section light-section" id="impact">
+      <div class="container">
+        <h2>Where Your Support Makes a Difference</h2>
+
+        <div class="support-grid">
+
+          <div class="support-card">
+            <h3>Ongoing Medical Care</h3>
+            <p>
+              Ventilator support, oxygen therapy, medications,
+              feeding equipment, and specialty care.
+            </p>
+          </div>
+
+          <div class="support-card">
+            <h3>Family Stability</h3>
+            <p>
+              Helping offset costs associated with extended
+              hospital stays and long-term care needs.
+            </p>
+          </div>
+
+          <div class="support-card">
+            <h3>Future Foundation</h3>
+            <p>
+              Laying groundwork to provide financial relief
+              for NICU and PICU families nationwide.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WAYS TO SUPPORT -->
+    <section class="story-section light-section">
+      <div class="container">
+        <h2>Ways to Support</h2>
+
+        <div class="support-links">
+
+          <a href="https://www.gofundme.com/f/help-bentleys-family-with-medical-expenses" target="_blank" class="primary-btn">
+            Support Through GoFundMe
+          </a>
+
+          <a href="https://givebutter.com/bentleysfundraiser" target="_blank" class="secondary-btn">
+            Buy a Shirt
+          </a>
+
+        </div>
+
+        <p style="margin-top:40px;">
+          You can also support by following and sharing Bentley’s journey:
+        </p>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61572417703080" target="_blank">
+            <i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/bentleydangelo7/" target="_blank">
+            <i class="fab fa-instagram"></i></a>
+          <a href="https://www.reddit.com/user/Mundane_Reference134/submitted/" target="_blank">
+            <i class="fab fa-reddit-alien"></i></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MOVEMENT CLOSE -->
+    <section class="story-section final-cta">
+      <div class="container">
+        <h2>More Than a Donation</h2>
+        <p>
+          Your support is belief. It is strength. It is standing with
+          a family that was told to prepare for goodbye — and chose to fight.
+        </p>
+
+        <p>
+          This is bigger than one child.
+          This is a movement built on resilience.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Bentley’s Support Reef</p>
+  </footer>
+
+  <!-- Ambient Background Audio-->
+   <audio id="ambient-audio" loop>
+    <source src="audio/the_mountain-inspiring-483307.mp3" type="audio/mp3">
+   </audio>
+
+  <!-- Sound Toggle Button -->
+   <button id="sound-toggle" class="sound-btn">🔊</button>
+
+  <script>
+
+  // fade-in animation
+
+  document.addEventListener("DOMContentLoaded", function() {
+
+    const faders = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    faders.forEach(el => observer.observe(el));
+
+    function animateCounter(element) {
+      const end = parseInt(element.getAttribute("data-total"));
+      let current = 0;
+      const duration = 2000;
+      const increment = Math.ceil(end / (duration / 16));
+
+      function update() {
+        current += increment;
+        if (current >= end) {
+          element.textContent = end.toLocaleString();
+        } else {
+          element.textContent = current.toLocaleString();
+          requestAnimationFrame(update);
+        }
+      }
+
+      update();
+    }
+
+    const counters = document.querySelectorAll("[data-total]");
+    counters.forEach(counter => animateCounter(counter));
+
+  });
+
+   /* =========================
+     AMBIENT AUDIO
+  ========================= */
+
+  const audio = document.getElementById("ambient-audio");
+  const toggle = document.getElementById("sound-toggle");
+
+  audio.volume = 0.07;
+
+  document.addEventListener("click", function startAudio() {
+    audio.play().catch(() => {});
+    document.removeEventListener("click", startAudio);
+  });
+
+  toggle.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play();
+      toggle.textContent = "🔊";
+    } else {
+      audio.pause();
+      toggle.textContent = "🔈";
+    }
+  });
+
+  </script>
+
+</body>
+</html>
+  

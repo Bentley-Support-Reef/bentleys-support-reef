@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bentley’s Support Reef shares the journey of a 22-week micro preemie and a growing mission to support families facing extended NICU and PICU stays.">
+  <title>Bentley’s Support Reef</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Bentley’s Support Reef</div>
+      <ul class="nav-links">
+        <li><a href="index-new.html">Home</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="https://www.gofundme.com/f/help-bentleys-family-with-medical-expenses" target="_blank" class="donate-btn">Donate Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Born at 22 Weeks.<br>Still Fighting.</h1>
+
+      <p>
+        Born at 22 weeks, weighing just 1 pound 4 ounces, 
+        Bentley's fight for life became a movement of faith, resilience,
+        and hope for families around the world.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="about.html" class="primary-btn">Explore Bentley's Journey</a>
+        <a href="support.html" class="secondary-btn">Discover The Mission</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="photo-strip">
+      <div class="photo-container">
+        <img src="images/NICU/IMG_0334.jpeg" alt="Bentley at birth" loading="lazy">
+        <img src="images/PICU/IMG_1514.jpeg" alt="Bentley on ventilator" loading="lazy">
+        <img src="images/today/IMG_5848.jpeg" alt="Bentley sitting today" loading="lazy">
+      </div>
+    </section>
+
+    <section class="overview">
+      <div class="container">
+        <h2>A Story of Survival</h2>
+
+        <p>
+          After 176 days in the NICU and critical battles in the PICU,
+          Bentley defied expectations more than once.
+        </p>
+
+        <p>
+          His story is not only about survival -
+          it is about purpose born through adversity.
+        </p>
+
+        <a href="about.html" class="primary-btn">Read Bentley's Full Story</a>
+      </div>
+    </section>
+
+    <section class="mission">
+      <div class="container">
+        <h2>Turning Pain Into Purpose</h2>
+
+        <p>
+          Extended NICU and PICU stays place emotional and financial
+          pressure on families at their most vulnerable moments.
+        </p>
+
+        <p>
+          We are building a foundation to provide relief, 
+          resources, and hope to families walking this road.
+        </p>
+
+        <a href="about.html" class="secondary-btn">Learn About The Foundation</a>
+      </div>
+    </section>
+
+    <section class="impact">
+      <div class="container">
+        <h2>14+ Million Reached Worldwide</h2>
+
+        <p>
+          What began as one father sharing his son's fight
+          has reached over 14 million people worldwide -
+          inspiring strength in families across the globe.
+        </p>
+
+        <a href="https://www.instagram.com/bentleydangelo7/" target="_blank" class="primary-btn">
+          Follow The Journey
+        </a>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container">
+        <h2>Stand With Bentley</h2>
+
+        <p>
+          Bentley is home and still fighting every day.
+          Stand with us as we continue his care
+          and build something greater for others.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="support.html" class="primary-btn">Support Bentley</a>
+          <a href="about.html" class="secondary-btn">Meet Our Family</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Bentley’s Support Reef</p>
+  </footer>
+
+  <!-- Ambient Background Audio -->
+   <audio id="ambient-audio" loop>
+    <source src="audio/paulyudin-ambient-ambient-music-482398.mp3" type="audio/mp3">
+   </audio>
+
+   <!-- Sound Toggle Button -->
+   <button id="sound-toggle" class="sound-btn">🔊</button>
+
+     <script>
+    
+     /* =========================
+     AMBIENT AUDIO
+  ========================= */
+
+    const audio = document.getElementById("ambient-audio");
+    const toggle = document.getElementById("sound-toggle");
+
+    audio.volume = 0.07;
+
+    document.addEventListener("click", function startAudio() {
+      audio.play().catch(() => {});
+      document.removeEventListener("click", startAudio);
+    });
+
+    toggle.addEventListener("click", () => {
+      if (audio.paused) {
+        audio.play();
+        toggle.textContent = "🔊";
+      } else {
+        audio.pause();
+        toggle.textContent = "🔈";
+      }
+    });
+
+  </script>
+
+</body>
+</html>
